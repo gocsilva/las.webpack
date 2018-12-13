@@ -1,0 +1,8 @@
+Example using:
+    <a class="def-btn radius btn-anim01 croyalb">Button</a>
+
+Options: 
+    def-btn: Button default layout;
+    radius: Make button border radius;
+    btn-submit01: Create animation properties;
+    color: [cpink/croyalb]

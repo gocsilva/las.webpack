@@ -1,0 +1,82 @@
+.def-btn {
+    cursor: pointer;
+    border: solid 2px black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    min-width: 80px;
+    min-height: 25px;
+}
+
+.def-btn.radius {
+    border-radius: 35px;
+}
+
+.def-btn.btn-submit01{
+    overflow: hidden;
+}
+
+.def-btn.btn-submit01::before {
+   content: '';
+   position: absolute;
+   height: 7px;
+   width: 7px;
+   background-color: transparent;
+   left: 30%;
+   z-index: -1;
+   transform: translateY(-4%) scale(.4);
+   transition-property: left, transform, background-color;
+   transition-delay: 0s, 0s, 0s;
+   transition-duration: 1s,0.5s,0s;
+   border: solid 1px transparent;
+   border-radius: 30px;
+}
+
+.def-btn.btn-submit01:hover::before {
+    left: 0px;
+    background-color: red;
+    transform: translateY(-4%) scale(10);
+    transition-delay: 0s, 1s, 0s;
+}
+
+.def-btn.btn-submit01::after {
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background-color: transparent;
+    right: 30%;
+    z-index: -1;
+    transform: translateY(-4%) scale(.4);
+    transition-property: right, transform, background-color;
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 1s,0.5s,0s;
+    border: solid 1px transparent;
+    border-radius: 30px;
+ }
+ 
+.def-btn.btn-submit01.cpink:hover:after{
+    background-color: deeppink !important;
+}
+
+.def-btn.btn-submit01.croyalb:hover:after{
+    background-color: royalblue !important;
+ }
+
+.def-btn.btn-submit01:hover::after {
+     right: 0px;
+     background-color: red;
+     transform: translateY(-4%) scale(10);
+     transition-delay: 0s, 1s, 0s;
+}
+
+.def-btn.btn-submit01.cpink:hover:before{
+   background-color: deeppink !important;
+}
+
+.def-btn.btn-submit01.croyalb:hover:before{
+   background-color: royalblue !important;
+}
